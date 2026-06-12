@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopLane | Curated essentials</title>
+    <meta name="description" content="A polished storefront experience for ShopLane with a sharper layout, richer spacing, and a more professional visual system.">
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            const req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <section class="hero surface-panel">
+        <div class="hero-copy">
+            <p class="eyebrow">Modern storefront</p>
+            <h1>Sharper layout. Cleaner shopping. A more premium first impression.</h1>
+            <p>This version keeps the original commerce flow, but gives the site a more confident visual system with better spacing, stronger hierarchy, and a custom feel.</p>
+            <div class="hero-actions">
+                <a class="primary" href="#clothing">Explore collections</a>
+                <a class="secondary" href="cart.html">View cart</a>
+            </div>
+            <div class="hero-metrics">
+                <div>
+                    <strong>Fast</strong>
+                    <span>Simple browsing, cleaner paths to product detail pages.</span>
+                </div>
+                <div>
+                    <strong>Curated</strong>
+                    <span>Product cards with more room, depth, and visual hierarchy.</span>
+                </div>
+                <div>
+                    <strong>Polished</strong>
+                    <span>Balanced colors, softer shadows, and a more editorial feel.</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-panel">
+            <div class="hero-panel-card">
+                <p class="eyebrow" style="color: rgba(255,255,255,.82);">Editorial pick</p>
+                <h3>Built to feel like a real brand, not a starter template.</h3>
+                <p>Cleaner typography, better contrast, and a stronger storefront rhythm carry through every page.</p>
+                <div class="hero-chip-row">
+                    <span class="hero-chip"><i class="fas fa-shipping-fast"></i> quick delivery</span>
+                    <span class="hero-chip"><i class="fas fa-lock"></i> secure checkout</span>
+                </div>
+            </div>
+            <div class="hero-panel-card alt">
+                <p class="eyebrow">Shopping flow</p>
+                <h3>Discovery, detail, cart, and confirmation all feel connected.</h3>
+                <p>That coherence is what makes the site read as intentionally designed.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SLIDER -->
+    <div id="2"></div>
+    <script>
+        load("slider.html");
+        function load(url)
+        {
+            const req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(2).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- CONTENT SECTION -->
+    <div id="3"></div>
+    <script>
+        load("content.html");
+        function load(url)
+        {
+            const req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(3).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            const req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+
+</body>
+
+<!-- slider JS START -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+    $('#containerSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+    });
+</script>
+<!-- slider JS ENDS -->
+
+<!-- content JS -->
+<script src="content.js?v=2"></script>
+
+</html>
